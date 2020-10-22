@@ -11,6 +11,8 @@ import chainRococo from './chains/rococo.svg';
 import chainRococoTick from './chains/rococo-tick.svg';
 import chainRococoTrack from './chains/rococo-track.svg';
 import chainRococoTrick from './chains/rococo-trick.svg';
+import chainPirl from './chains/pirl.png';
+
 
 // defaults for the node type, assuming we don't have a specific chain, but rather match on the implementation
 // alphabetical
@@ -37,6 +39,7 @@ import nodeRobonomics from './nodes/robonomics.svg';
 import nodeStafi from './nodes/stafi.png';
 import nodeSubsocial from './nodes/subsocial.svg';
 import nodeSubstrate from './nodes/substrate-hexagon.svg';
+import nodePirl from './nodes/pirl.png';
 
 // extensions
 // alphabetical
@@ -65,7 +68,8 @@ const chainLogos: Record<string, any> = [
   ['Rococo', chainRococo],
   ['Tick', chainRococoTick],
   ['Track', chainRococoTrack],
-  ['Trick', chainRococoTrick]
+  ['Trick', chainRococoTrick],
+  ['Pirl', chainPirl]
 ].reduce((logos, [chain, logo]): Record<string, any> => ({
   ...logos,
   [(chain as string).toLowerCase()]: logo
@@ -98,6 +102,7 @@ const nodeLogos: Record<string, any> = [
   ['Stafi Node', nodeStafi],
   ['Stafi', nodeStafi],
   ['subsocial-node', nodeSubsocial],
+  ['pirl-node', nodePirl],
   ['substrate-node', nodeSubstrate],
   ['Equilibrium Node', nodeEquilibrium],
   ['Equilibrium', nodeEquilibrium]
@@ -140,6 +145,7 @@ const namedLogos: Record<string, any> = {
   rococoTrick: chainRococoTrick,
   stafi: nodeStafi,
   subsocial: nodeSubsocial,
+  pirl: nodePirl,
   substrate: nodeSubstrate,
   westend: nodePolkadot
 };

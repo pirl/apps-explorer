@@ -55,7 +55,12 @@ function createDev (t: TFunction): LinkOption[] {
 
 function createLiveNetworks (t: TFunction): LinkOption[] {
   return [
-    // fixed, polkadot
+    {
+      info: 'pirl',
+      text: t<string>('rpc Pirl', 'Pirl', { ns: 'apps-config' }),
+      textHoster: t<string>('rpc.hosted.by', 'hosted by {{host}}', { ns: 'apps-config', replace: { host: 'Starkley Tech' } }),
+      value: 'ws://149.5.28.131:9945'
+    },
     {
       dnslink: 'polkadot',
       info: 'polkadot',
@@ -147,6 +152,7 @@ function createLiveNetworks (t: TFunction): LinkOption[] {
       textHoster: t<string>('rpc.hosted.by', 'hosted by {{host}}', { ns: 'apps-config', replace: { host: 'DappForce' } }),
       value: 'wss://rpc.subsocial.network'
     }
+    
   ];
 }
 

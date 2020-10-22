@@ -13,6 +13,7 @@ const chainPhala = '#4dc56a';
 const chainPlasm = '#2096F3';
 const chainPolkadot = '#e6007a';
 const chainKusama = '#000000';
+const chainPirl = '#A2D729';
 const chainRocco = '#6f36dc';
 const chainRoccoAcala = '#173DC9';
 const chainRoccoDarwinia = '#7C30DD';
@@ -31,6 +32,7 @@ const nodeNodle = '#1ab394';
 const nodeKilt = '#eb5b2a';
 const nodeStafi = '#00F3AB';
 const nodeSubsocial = '#b9018c';
+const nodePirl = '#000000';
 
 // overrides based on the actual matched chain name
 // alphabetical
@@ -41,6 +43,7 @@ const chainColors: Record<string, any> = [
   ['darwinia parachain', chainRoccoDarwinia],
   ['Kulupu', chainKulupu],
   ['Kusama', chainKusama],
+  ['Pirl', chainPirl],
   ['Kusama CC1', chainKusama],
   ['Kusama CC2', chainKusama],
   ['Kusama CC3', chainKusama],
@@ -69,7 +72,8 @@ const nodeColors: Record<string, any> = [
   ['kilt node', nodeKilt],
   ['nodle chain node', nodeNodle],
   ['Stafi node', nodeStafi],
-  ['subsocial node', nodeSubsocial]
+  ['subsocial node', nodeSubsocial],
+  ['pirl node', nodePirl]
   // ['node template', emptyColor],
   // ['parity polkadot', emptyColor],
   // ['substrate node', emptyColor]
