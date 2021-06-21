@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2020 
+ *   All rights reserved.
+ */
 // Copyright 2017-2020 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
@@ -58,8 +62,8 @@ function createLiveNetworks (t: TFunction): LinkOption[] {
     {
       info: 'pirl',
       text: t<string>('rpc Pirl', 'Pirl', { ns: 'apps-config' }),
-      textHoster: t<string>('rpc.hosted.by', 'hosted by {{host}}', { ns: 'apps-config', replace: { host: 'Starkley Tech' } }),
-      value: 'ws://149.5.28.131:9945'
+      textHoster: t<string>('rpc.pirl.network', 'hosted by {{host}}', { ns: 'apps-config', replace: { host: 'Starkley Tech' } }),
+      value: 'wss://rpc.pirl.network'
     },
     {
       dnslink: 'polkadot',

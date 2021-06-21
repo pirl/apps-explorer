@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2020 
+ *   All rights reserved.
+ */
 // Copyright 2017-2020 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
@@ -22,6 +26,7 @@ import robonomics from './robonomics';
 import stablePoc from './stable-poc';
 import stafi from './stafi';
 import subsocial from './subsocial';
+import pirl from './pirl';
 
 export default {
   Crab: crab,
@@ -48,5 +53,6 @@ export default {
   'stable-poc': stablePoc,
   stable_poc: stablePoc,
   stafi,
-  subsocial
+  subsocial,
+  pirl
 };

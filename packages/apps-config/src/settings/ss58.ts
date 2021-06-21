@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2020 
+ *   All rights reserved.
+ */
 // Copyright 2017-2020 @polkadot/ui-settings authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 

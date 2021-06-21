@@ -163,3 +163,30 @@ The accounts are stored in the following directories:
 * Windows: `%APPDATA%\polkadot-apps\polkadot-accounts`
 
 For more details on the desktop app, head over to [Electron package README](https://github.com/polkadot-js/apps/blob/master/packages/apps-electron/README.md).
+
+
+default keys:
+
+{
+  "Address": "AccountId",
+  "LookupSource": "AccountId",
+  "Account": {
+    "nonce": "U256",
+    "balance": "U256"
+  },
+  "Transaction": {
+    "nonce": "U256",
+    "action": "String",
+    "gas_price": "u64",
+    "gas_limit": "u64",
+    "value": "U256",
+    "input": "Vec<u8>",
+    "signature": "Signature"
+  },
+  "Signature": {
+    "v": "u64",
+    "r": "H256",
+    "s": "H256"
+  },
+  "Keys": "SessionKeys5"
+}
