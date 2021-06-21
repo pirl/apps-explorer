@@ -1,0 +1,88 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = create;
+
+/*
+ *   Copyright (c) 2020 
+ *   All rights reserved.
+ */
+// Copyright 2017-2020 @polkadot/ui-settings authors & contributors
+// SPDX-License-Identifier: Apache-2.0
+// Definitions here are with the following values -
+//   info: the name of a logo as defined in ../logos, specifically in namedLogos
+//   text: The text you wish to display in the dropdown
+//   value: The actual ss5Format value (as registered)
+function create(t) {
+  return [// base defaults
+  {
+    info: 'default',
+    text: t('ss58.default', 'Default for the connected node', {
+      ns: 'apps-config'
+    }),
+    value: -1
+  }, {
+    info: 'polkadot',
+    text: t('ss58.polkadot', 'Polkadot (live)', {
+      ns: 'apps-config'
+    }),
+    value: 0
+  }, {
+    info: 'kusama',
+    text: t('ss58.kusama', 'Kusama (canary)', {
+      ns: 'apps-config'
+    }),
+    value: 2
+  }, {
+    info: 'substrate',
+    text: t('ss58.substrate', 'Substrate (generic)', {
+      ns: 'apps-config'
+    }),
+    value: 42
+  }, // alphabetical extended chains
+  {
+    info: 'centrifuge',
+    text: t('ss58.centrifuge', 'Centrifuge (live)', {
+      ns: 'apps-config'
+    }),
+    value: 36
+  }, {
+    info: 'edgeware',
+    text: t('ss58.edgeware', 'Edgeware (live)', {
+      ns: 'apps-config'
+    }),
+    value: 7
+  }, {
+    info: 'plasm',
+    text: t('ss58.plasm', 'Plasm (live)', {
+      ns: 'apps-config'
+    }),
+    value: 5
+  }, {
+    info: 'stafi',
+    text: t('ss58.stafi', 'Stafi (live)', {
+      ns: 'apps-config'
+    }),
+    value: 20
+  }, {
+    info: 'dock-testnet',
+    text: t('ss58.dock-testnet', 'Dock Testnet (test)', {
+      ns: 'apps-config'
+    }),
+    value: 21
+  }, {
+    info: 'dock-mainnet',
+    text: t('ss58.dock-mainnet', 'Dock Mainnet (live)', {
+      ns: 'apps-config'
+    }),
+    value: 22
+  }, {
+    info: 'subsocial',
+    text: t('ss58.subsocial', 'Subsocial (live)', {
+      ns: 'apps-config'
+    }),
+    value: 28
+  }];
+}
