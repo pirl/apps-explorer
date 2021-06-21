@@ -62,8 +62,8 @@ function createLiveNetworks (t: TFunction): LinkOption[] {
     {
       info: 'pirl',
       text: t<string>('rpc Pirl', 'Pirl', { ns: 'apps-config' }),
-      textHoster: t<string>('rpc.pirl.network', 'hosted by {{host}}', { ns: 'apps-config', replace: { host: 'Starkley Tech' } }),
-      value: 'wss://rpc.pirl.network'
+      textHoster: t<string>('rpc-pirl.starkleytech.com', 'hosted by {{host}}', { ns: 'apps-config', replace: { host: 'Starkley Tech' } }),
+      value: 'wss://rpc-pirl.starkleytech.com'
     },
     {
       dnslink: 'polkadot',
